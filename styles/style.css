@@ -8,6 +8,11 @@ header{
     background-color: lightgrey;
     padding: 10px;
 }
+main{
+     background-image: url(../imgs/fondo.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
 
 a{
     text-decoration: none;
@@ -97,7 +102,7 @@ nav ul li{
 
 .imagenesProd{
     display: flex;
-    background-color: cadetblue;
+
     padding: 30px;
     justify-content: center;
     align-items: center;
@@ -109,7 +114,7 @@ nav ul li{
 .pie{
     display: flex;
     justify-content: space-around;
-    background-color: cadetblue;
+    background-color: lightgray;
     padding: 50px;
     border-top: solid black;
 
@@ -223,4 +228,15 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 border-top: solid 1px;
+}
+.redes{
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+.social{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }

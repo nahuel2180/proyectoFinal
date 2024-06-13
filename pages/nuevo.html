@@ -11,49 +11,108 @@
 
 <body>
     <header>
-        <div class="encabezado">
-            <img src="../imgs/logo.png" alt="logo">
-            <h1 class="nombre">SportHub | Nuevo</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./mas.html">Mas vendido</a></li>
-                <li><a href="./ofertas.html">Ofertas</a></li>
-                
-            </ul>
+        <nav class="navbar navbar-expand-lg navegacion">
             
-            <a class="button" href="./carrito.html"><img class="buttonimg" src="../imgs/carrito.png" alt="carrito"></a>
-            
-        </nav>
+            <div class="container-fluid">
+              <img class="logo" src="../imgs/logo.png" alt="Logo">  
+              <h1>SportHub || Nuevo</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="botonesnav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="botonesnav">
+                    <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                  </li>
+                  <li class="botonesnav">
+                    <a class="nav-link" href="./mas.html">Mas vendido</a>
+                  </li>
+                  <li class="botonesnav">
+                    <a class="nav-link" href="./carrito.html">Carro de compras</a>
+                  </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="buscar" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
     
-    <section class="buscar">
-        <div class="contenedorBusqueda">
-            <form action="../index.html" method="get">
-            <input type="text" placeholder="Buscar..." name="search">
-            <input type="submit" value="Buscar">
-            </form>
+    <main>
+        <section class="imagenesProd ">    
+          <div class="row">
+              <div class="card col-4" style="width: 18rem;">
+                  <img src="../imgs/producto1.png" class="card-img-top" alt="Zapatilla deportiva">
+                  <div class="card-body">
+                  <a href="./carrito.html" class="btn btn-primary">Comprar</a>
+                  <h3>$150usd</h3>
+              </div>
+            </div>
+
+            <div class="card col-4" style="width: 18rem;">
+                <img src="../imgs/producto2.png" class="card-img-top" alt="Zapatilla deportiva">
+                <div class="card-body">
+                    <a href="./carrito.html" class="btn btn-primary">Comprar</a>
+                    <h3>$184usd</h3>
+                </div>
+            </div>
+
+            <div class="card col-4" style="width: 18rem;">
+                <img src="../imgs/producto3.png" class="card-img-top" alt="Zapatilla deportiva">
+                <div class="card-body">
+                <a href="./carrito.html" class="btn btn-primary">Comprar</a>
+                <h3>$215usd</h3>
+                </div>
+            </div>
         </div>
+       
     </section>
-    <section class="imagenesProd">    
-        <div class="producto">
-            <img src="../imgs/producto1.png" alt="producto1">
-            <img src="../imgs/producto2.png" alt="producto2"><br>
-            <img src="../imgs/producto3.png" alt="producto3">
-            <img src="../imgs/producto4.png" alt="producto4">
-        </div>    
-    </section>
-    
-    <footer class="pie">
-        <div>
-            <p>Atencion al cliente: +54 11 0800 5678.</p>
+
+    <section class="imagenesProd ">
+       <div class="row">
+        <div class="card col-4" style="width: 18rem;">
+            <img src="../imgs/producto4.png" class="card-img-top" alt="Zapatilla deportiva">
+            <div class="card-body">
+                <a href="./carrito.html" class="btn btn-primary">Comprar</a>
+                <h3>$300usd</h3>
+            </div>
         </div>
-        <div>
+
+        <div class="card col-4" style="width: 18rem;">
+            <img src="../imgs/producto5.png" class="card-img-top" alt="Zapatilla deportiva">
+            <div class="card-body">
+                <a href="./carrito.html" class="btn btn-primary">Comprar</a>
+                <h3>$120usd</h3>
+            </div>
+        </div>
+
+        <div class="card col-4" style="width: 18rem;">
+            <img src="../imgs/producto6.png" class="card-img-top" alt="Zapatilla deportiva">
+            <div class="card-body">
+                <a href="./carrito.html" class="btn btn-primary">Comprar</a>
+                <h3>$270usd</h3>
+            </div>
+        </div>
+       </div>
+    </section>
+  </main>
+   
+    <footer class="pie row">
+        <div class="col-4">
+            <p>Email: SportHub@gmail.com</p>
+        </div>
+        <div class="col-4">
             <p>Copyrigth ©</p>
         </div>
-        <div>
-            <p>Email: SportHub@gmail.com</p>
+        <div class="social col-4">
+            <p>Redes:  </p>
+            <a href="www.instagram.com"><img class="redes" src="../imgs/instagram.png" alt="instagram"></a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    

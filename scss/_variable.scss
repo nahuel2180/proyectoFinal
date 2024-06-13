@@ -1,0 +1,12 @@
+$tipografia: "roboto";
+$tipografiatitulo: "arial";
+
+%gradiente {
+    background: rgb(1, 159, 235);
+    background: linear-gradient(279deg, rgba(1, 159, 235, 1) 5%, rgba(0, 255, 231, 1) 48%);
+}
+
+%gradientes {
+    background: rgb(235, 162, 1);
+    background: linear-gradient(279deg, rgba(235, 162, 1, 1) 5%, rgba(255, 244, 0, 1) 78%);
+}

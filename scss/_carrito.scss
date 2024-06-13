@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    @extend%gradientes;
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid black;
+    }
+
+    th {
+        @extend%gradiente;
+    }
+
+    .producto button:hover {
+        background-color: aqua;
+
+    }
+
+    /* Estilos del botón */
+    .buttonPagar {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .buttonPagar:hover {
+        background-color: #45a049;
+    }
+
+
+    .volver {
+        border: solid black;
+        border-width: 1px;
+        text-decoration: none;
+        background-color: beige;
+    }
+
+    .volver:hover {
+        background-color: lightgray;
+    }
+}

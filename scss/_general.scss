@@ -1,0 +1,146 @@
+@import "variable";
+body {
+    margin: 0;
+    font-family: $tipografia
+}
+
+header {
+    height: 150px;
+  @extend%gradientes;
+    padding: 10px;
+    h1{
+        font-family: $tipografiatitulo
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            display: flex;
+            margin: 10px;
+            border: solid 1px;
+            padding: 3px;
+        }
+
+        .botonesnav {
+            background-color: #00d5e4;
+            border-radius: 4px;
+            padding: 9px;
+
+
+        }
+
+        .botonesnav:hover {
+            background-color: #125875;
+        }
+
+        .navegacion {
+            background-color: lightgray;
+            padding: 0px;
+        }
+
+        .logo {
+            width: 75px;
+            height: 82px;
+            padding: 5px;
+            border-radius: 10px;
+            
+        }
+
+        
+
+        .buscar {
+
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .buscar:hover {
+            background-color: #125875;
+        }
+
+        .buscar div {
+            background-color: lightgray;
+            display: flex;
+            width: 100%;
+            height: 75px;
+            justify-content: center;
+
+        }
+
+
+
+    }
+}
+
+
+
+main {
+    background-color: beige;
+    //background-image: url(../imgs/fondo.png);
+    //background-repeat: no-repeat;
+    //background-size: cover;
+
+    .producto img {
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        border: solid 2px;
+    }
+
+    .imagenesProd {
+        display: flex;
+
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: 25px;
+    }
+
+    .card:hover {
+        background-color: #125875;
+        box-shadow: 0px 10px 10px #125875;
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: solid 1px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    @extend%gradientes;
+    padding: 50px;
+    border-top: solid black;
+
+    .social {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        .redes {
+            width: 25px;
+            height: 25px;
+            border-radius: 15px;
+        }
+
+    }
+}
